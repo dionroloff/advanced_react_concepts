@@ -5,7 +5,7 @@
   "author": "Dion Roloff",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node lib/server.js",
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -22,7 +22,7 @@
     "eslint": "^4.1.0",
     "eslint-plugin-react": "^7.1.0",
     "jest": "^20.0.4",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^16.10.2"
   },
   "dependencies": {
     "axios": "^0.16.2",
